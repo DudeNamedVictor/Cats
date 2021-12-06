@@ -1,7 +1,9 @@
-package com.example.cats
+package com.example.cats.presentation
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.cats.CatModel
+import com.example.cats.utils.GithubApi
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

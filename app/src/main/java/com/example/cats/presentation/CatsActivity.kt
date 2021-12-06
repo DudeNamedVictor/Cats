@@ -1,4 +1,4 @@
-package com.example.cats
+package com.example.cats.presentation
 
 import android.os.Bundle
 import androidx.activity.viewModels

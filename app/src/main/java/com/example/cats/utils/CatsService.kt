@@ -1,5 +1,6 @@
-package com.example.cats
+package com.example.cats.utils
 
+import com.example.cats.CatModel
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
