@@ -3,7 +3,7 @@ package com.example.cats.presentation.mainFragment
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.cats.CatModel
-import com.example.cats.utils.GithubApi
+import com.example.cats.utils.CatApi
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -13,7 +13,7 @@ class MainViewModel : ViewModel() {
     var catMLD = MutableLiveData<String>()
 
     fun getUserData() {
-        val api = GithubApi.RETROFIT_SERVICE.getCat()
+        val api = CatApi.RETROFIT_SERVICE.getCat()
 
         api.enqueue(object : Callback<List<CatModel>> {
             override fun onResponse(

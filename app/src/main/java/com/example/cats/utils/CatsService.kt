@@ -16,7 +16,7 @@ interface CatsService {
     fun getCat(): Call<List<CatModel>>
 }
 
-object GithubApi {
+object CatApi {
     val RETROFIT_SERVICE: CatsService by lazy {
         retrofit.create(CatsService::class.java)
     }
