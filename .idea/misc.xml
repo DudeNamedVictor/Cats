@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Victor/AndroidStudioProjects/Cats/app/src/main/res/layout/cats_activity_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/Cats/app/src/main/res/layout/cats_activity_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/Cats/app/src/main/res/layout/main_fragment_layout.xml" value="0.2" />
+        <entry key="..\:/Users/Victor/AndroidStudioProjects/Cats/app/src/main/res/layout/second_fragment_layout.xml" value="0.13994565217391305" />
       </map>
     </option>
   </component>

@@ -1,4 +1,4 @@
-package com.example.cats.presentation
+package com.example.cats.presentation.mainFragment
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
