@@ -1,17 +1,13 @@
-package com.example.cats.utils
+package com.example.domain.utils
 
-import com.example.cats.CatModel
-import com.example.cats.utils.Constants.CATS_KEY
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.GET
-import retrofit2.http.Headers
 
 
 object CatsService {
+    // add header into this class
 
     fun getCats(): Retrofit {
         val logging = HttpLoggingInterceptor()
