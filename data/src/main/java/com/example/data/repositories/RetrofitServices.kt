@@ -1,7 +1,7 @@
-package com.example.domain.repositories
+package com.example.data.repositories
 
-import com.example.domain.models.CatModel
-import com.example.domain.utils.Constants
+import com.example.data.models.CatModel
+import com.example.data.utils.Constants
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Headers

@@ -1,4 +1,4 @@
-package com.example.domain.utils
+package com.example.data.utils
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

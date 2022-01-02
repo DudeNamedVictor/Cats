@@ -1,4 +1,4 @@
-package com.example.domain.utils
+package com.example.data.utils
 
 object Constants {
     const val BASE_URL = "https://api.thecatapi.com/"

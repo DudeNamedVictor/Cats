@@ -1,8 +1,8 @@
 package com.example.domain.useCase
 
-import com.example.domain.models.CatModel
-import com.example.domain.repositories.RetrofitServices
-import com.example.domain.utils.CatsService
+import com.example.data.models.CatModel
+import com.example.data.repositories.RetrofitServices
+import com.example.data.utils.CatsService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
