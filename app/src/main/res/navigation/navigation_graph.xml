@@ -24,4 +24,9 @@
         android:label="SecondFragment"
         tools:layout="@layout/second_fragment_layout"/>
 
+    <action
+        android:id="@+id/action_secondFragment_to_mainFragment"
+        app:destination="@id/secondFragment"
+        app:popUpToInclusive="true" />
+
 </navigation>
