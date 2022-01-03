@@ -2,25 +2,24 @@ package com.example.cats.presentation.mainFragment
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.domain.useCase.CatsUseCase
+import com.example.domain.useCase.MainUseCase
 
 class MainViewModel : ViewModel() {
-    // think about variable names
     // add error exception
 
-    var catMLD = MutableLiveData<String>()
+    var catsListMLD = MutableLiveData<String>()
 
     fun getUserData() {
-        val catsUseCase = CatsUseCase(object : CatsUseCase.Cats {
+        val mainUseCase = MainUseCase(object : MainUseCase.CatsListListener {
             override fun sendCats(cats: String) {
-                catMLD.value = cats
+                catsListMLD.value = cats
             }
 
-            override fun errorCats() {
+            override fun errorCats(error: String) {
                 TODO("Not yet implemented")
             }
         })
-        catsUseCase.getCats()
+        mainUseCase.getCatsList()
     }
 
 }

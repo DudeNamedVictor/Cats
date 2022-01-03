@@ -39,7 +39,7 @@ class MainFragment : Fragment() {
     }
 
     private fun setObservers() {
-        viewModel.catMLD.observe(this, {
+        viewModel.catsListMLD.observe(this, {
             binding.imageView.load(it) {
                 scale(Scale.FILL)
             }
