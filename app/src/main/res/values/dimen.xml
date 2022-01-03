@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nav_tabs_height">100dp</dimen>
+    <dimen name="norm_border">16dp</dimen>
+    <dimen name="tab_image_size">25dp</dimen>
+</resources>
