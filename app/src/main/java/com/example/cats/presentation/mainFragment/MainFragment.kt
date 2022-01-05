@@ -28,7 +28,7 @@ class MainFragment : Fragment() {
     }
 
     private fun initializeView() {
-        binding.getCat.setOnClickListener {
+        binding.loadCatButton.setOnClickListener {
             viewModel.getUserData()
         }
     }

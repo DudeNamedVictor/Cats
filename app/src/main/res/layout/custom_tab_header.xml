@@ -5,9 +5,9 @@
 
     <ImageView
         android:id="@+id/tab_icon"
-        android:layout_width="@dimen/tab_image_size"
-        android:layout_height="@dimen/tab_image_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/ic_baseline_cloud_download_24" />
 
 </FrameLayout>
