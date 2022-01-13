@@ -2,6 +2,7 @@ package com.example.cats.presentation.mainFragment
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.data.utils.CatsService
 import com.example.domain.useCase.MainUseCase
 
 class MainViewModel : ViewModel() {
@@ -9,7 +10,7 @@ class MainViewModel : ViewModel() {
 
     var catsListMLD = MutableLiveData<String>()
 
-    fun getUserData() {
+    fun getUserData(catsService: CatsService) {
         val mainUseCase = MainUseCase(object : MainUseCase.CatsListListener {
             override fun sendCats(cats: String) {
                 catsListMLD.value = cats
@@ -19,7 +20,7 @@ class MainViewModel : ViewModel() {
                 TODO("Not yet implemented")
             }
         })
-        mainUseCase.getCatsList()
+        mainUseCase.getCatsList(catsService)
     }
 
 }

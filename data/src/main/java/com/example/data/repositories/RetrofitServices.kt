@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface RetrofitServices {
 
     @GET("v1/images/search")
-    fun checkLevel(): Call<List<CatModel>>
+    fun getCats(): Call<List<CatModel>>
 }

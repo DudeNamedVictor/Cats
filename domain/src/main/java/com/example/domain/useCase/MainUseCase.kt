@@ -9,24 +9,23 @@ import retrofit2.Response
 
 class MainUseCase(private val listener: CatsListListener) {
 
-    fun getCatsList() {
-        val catsService = CatsService.getCatsList().create(RetrofitServices::class.java)
+    fun getCatsList(catsService: CatsService) {
+        catsService.getCatsList().create(RetrofitServices::class.java).getCats()
+            .enqueue(object : Callback<List<CatModel>> {
+                override fun onResponse(
+                    call: Call<List<CatModel>>,
+                    response: Response<List<CatModel>>,
+                ) {
+                    sendCatsList(response.body()?.get(0)?.url ?: "")
+                }
 
-        catsService.checkLevel().enqueue(object : Callback<List<CatModel>> {
-            override fun onResponse(
-                call: Call<List<CatModel>>,
-                response: Response<List<CatModel>>
-            ) {
-                sendCatsList(response.body()?.get(0)?.url ?: "")
-            }
-
-            override fun onFailure(call: Call<List<CatModel>>, t: Throwable) {
-                sendError(t.message ?: "")
-            }
-        })
+                override fun onFailure(call: Call<List<CatModel>>, t: Throwable) {
+                    sendError(t.message ?: "")
+                }
+            })
     }
 
-    private fun sendCatsList(cats : String) {
+    private fun sendCatsList(cats: String) {
         listener.sendCats(cats)
     }
 
